@@ -1,6 +1,8 @@
 com\mballem\curso\security\service\EspecialidadeService.class
 com\mballem\curso\security\domain\Paciente.class
+com\mballem\curso\security\repository\MedicoRepository.class
 com\mballem\curso\security\web\conversor\PerfisConverter.class
+com\mballem\curso\security\service\MedicoService.class
 com\mballem\curso\security\domain\PerfilTipo.class
 com\mballem\curso\security\repository\EspecialidadeRepository.class
 com\mballem\curso\security\repository\UsuarioRepository.class
@@ -8,6 +10,7 @@ com\mballem\curso\security\datatables\DatatablesColunas.class
 com\mballem\curso\security\config\SecurityConfig.class
 com\mballem\curso\security\domain\Especialidade.class
 com\mballem\curso\security\web\controller\MedicoController.class
+com\mballem\curso\security\web\conversor\EspecialidadesConverter.class
 com\mballem\curso\security\domain\Agendamento.class
 com\mballem\curso\security\domain\AbstractEntity.class
 com\mballem\curso\security\service\UsuarioService.class
@@ -15,6 +18,7 @@ com\mballem\curso\security\datatables\Datatables.class
 com\mballem\curso\security\domain\Perfil.class
 com\mballem\curso\security\domain\Horario.class
 com\mballem\curso\security\web\controller\UsuarioController.class
+com\mballem\curso\security\web\exception\ExceptionController.class
 com\mballem\curso\security\domain\Usuario.class
 com\mballem\curso\security\DemoSecurityApplication.class
 com\mballem\curso\security\domain\Medico.class
