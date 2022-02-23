@@ -18,4 +18,10 @@ public class PacienteService {
 		
 		return repository.findByUsuarioEmail(email).orElse(new Paciente());
 	}
+
+	@Transactional(readOnly = false)
+	public void salvar(Paciente paciente) {
+		
+		repository.save(paciente);		
+	}
 }
