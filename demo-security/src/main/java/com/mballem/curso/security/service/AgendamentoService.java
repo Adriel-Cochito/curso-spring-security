@@ -1,4 +1,4 @@
-package com.mballem.curso.security.web.controller;
+package com.mballem.curso.security.service;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -8,7 +8,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.mballem.curso.security.datatables.Datatables;
+import com.mballem.curso.security.domain.Agendamento;
 import com.mballem.curso.security.domain.Horario;
+import com.mballem.curso.security.web.controller.AgendamentoRepository;
 
 @Service
 public class AgendamentoService {
@@ -22,6 +24,12 @@ public class AgendamentoService {
 	public List<Horario> buscarHorariosNaoAgendadosPorMedicoIdEData(Long id, LocalDate data) {
 		
 		return repository.findByMedicoIdAndDataNotHorarioAgendado(id, data);
+	}
+
+	@Transactional(readOnly = false)
+	public void salvar(Agendamento agendamento) {
+		
+		repository.save(agendamento);
 	}
 
 }
